@@ -28,7 +28,7 @@ The agent learns to iteratively refine a bounding box over bird images from the 
 
 ---
 ### Qualitative Output
-<img src="figures/Figure3.svg" width="700px">
+<img src="Figure3.svg" width="700px">
 
 
 ---
