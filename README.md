@@ -32,34 +32,21 @@ The agent learns to iteratively refine a bounding box over bird images from the 
 
 ---
 
-## 🔧 How to Run
+## How to Run
 
-1. Open the provided Jupyter notebook in **Google Colab**  
+1. Open the provided Jupyter notebook in Google Colab  
 2. Mount the CUB dataset and run setup cells  
 3. Train the DQN agent  
 4. Evaluate using built-in visualization and metric functions  
 
----
 
-## 📚 Dataset
-
-Download CUB-200-2011:  
-https://www.vision.caltech.edu/datasets/cub_200_2011/
 
 ---
 
-## 👥 Contributors
+## Contributors
 
 Shaunak Mukherjee  
 Grayson Wills  
 Christian Okreghe  
 Aravind Muraleedharan  
 Purdue University – ECE 595
-
----
-
-## 🙏 Acknowledgments
-
-- Caicedo & Lazebnik (2015), *Active Object Localization with Deep RL*  
-- CUB-200-2011 dataset authors  
-- Stable-Baselines3 community  
