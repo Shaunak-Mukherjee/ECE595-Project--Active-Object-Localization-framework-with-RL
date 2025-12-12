@@ -27,8 +27,9 @@ The agent learns to iteratively refine a bounding box over bird images from the 
 - Modular utilities for dataset loading, evaluation, and visualization  
 
 ---
-### Qualitative Output  
-<img src="figures/Figure3.svg" width="700px"/>
+### Qualitative Output
+<img src="figures/Figure3.svg" width="700px">
+
 
 ---
 
