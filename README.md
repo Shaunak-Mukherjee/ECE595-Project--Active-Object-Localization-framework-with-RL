@@ -1,33 +1,65 @@
  ECE595-Project — Active Object Localization Framework with Deep Reinforcement Learning - Reimplementation and Extension
 
-This repository contains our final project for ECE 595: Reinforcement Learning at Purdue University (Fall 2025).  
-We re-implement and extend the method introduced in *“Active Object Localization with Deep Reinforcement Learning”* (Caicedo & Lazebnik, ICCV 2015) and apply it to the fine-grained **CUB-200-2011** bird dataset.
+# Active Object Localization with Deep Reinforcement Learning  
+### ECE 595 Final Project – Purdue University
 
-Our framework trains a Deep Q-Network (DQN) agent to iteratively refine a bounding box around a target bird species using a sequence of discrete actions. The agent learns a policy that moves a bounding box through the image until it reaches a satisfactory localization accuracy.
-
----
-
-## 🔍 Project Overview
-
-Traditional object localization relies on region proposals or exhaustive search.  
-In contrast, **Active Object Localization** treats localization as a *sequential decision process*:
-
-- The agent starts with a coarse bounding box.
-- It selects actions (move, scale, aspect ratio adjustments).
-- After each step, the environment updates the bounding box.
-- The episode ends when the agent predicts the **trigger action** (stop) or exceeds max steps.
-
-Rewards are based on improvements in IoU (Intersection over Union) between predicted and ground-truth boxes.
-
-Our implementation includes:
-
-- A custom **CUBActiveEnv** environment following OpenAI Gym API  
-- A **ResNet-50** feature extractor for state embeddings  
-- A **DQN agent** for sequential localization  
-- Evaluation modules, visualization tools, GIF/MP4 generators  
-- Attention heatmaps for interpretability
+This project implements an **active object localization framework** using **Deep Q-Learning**, inspired by Caicedo & Lazebnik (ICCV 2015).  
+The agent learns to iteratively refine a bounding box over bird images from the original "Pascal VOC 2007" and "CUB-200-2011" dataset.
 
 ---
 
-## 📁 Repository Structure
+## Overview
 
+- Custom Gym-style environment (`ActiveEnv`) for dynamic bounding-box manipulation  
+- ResNet-50 feature extractor + DQN agent
+- Sequential decision-making to localize subjects of interest in images from initial bounding box  
+- Evaluation on dataset with IoU metrics and trigger-based accuracy  
+- Visualization tools: episode rollouts, heatmaps, bounding-box overlays
+
+---
+
+## Key Features
+
+- Discrete action space (move, scale, aspect-ratio, trigger)  
+- Reward shaping based on IoU improvement  
+- Episode-level and dataset-level attention heatmaps  
+- GIF/MP4 generation for localization trajectories  
+- Modular utilities for dataset loading, evaluation, and visualization  
+
+---
+### Qualitative Output  
+<img src="figures/Figure3.svg" width="700px"/>
+
+---
+
+## 🔧 How to Run
+
+1. Open the provided Jupyter notebook in **Google Colab**  
+2. Mount the CUB dataset and run setup cells  
+3. Train the DQN agent  
+4. Evaluate using built-in visualization and metric functions  
+
+---
+
+## 📚 Dataset
+
+Download CUB-200-2011:  
+https://www.vision.caltech.edu/datasets/cub_200_2011/
+
+---
+
+## 👥 Contributors
+
+Shaunak Mukherjee  
+Grayson Wills  
+Christian Okreghe  
+Aravind Muraleedharan  
+Purdue University – ECE 595
+
+---
+
+## 🙏 Acknowledgments
+
+- Caicedo & Lazebnik (2015), *Active Object Localization with Deep RL*  
+- CUB-200-2011 dataset authors  
+- Stable-Baselines3 community  
