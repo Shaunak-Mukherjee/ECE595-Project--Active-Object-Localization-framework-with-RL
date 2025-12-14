@@ -19,7 +19,7 @@ Purdue University – ECE 595
 
 ## Overview
 
-- Custom Gym-style environment (`ActiveEnv`) for dynamic bounding-box manipulation  
+- Custom Gym-style environment for dynamic bounding-box manipulation  
 - ResNet-50 feature extractor + DQN agent
 - Sequential decision-making to localize subjects of interest in images from initial bounding box  
 - Evaluation on dataset with IoU metrics and trigger-based accuracy  
