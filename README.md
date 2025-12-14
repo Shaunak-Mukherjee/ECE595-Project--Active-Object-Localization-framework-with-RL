@@ -3,7 +3,7 @@
 # Active Object Localization with Deep Reinforcement Learning  
 ### ECE 595 Final Project – Purdue University
 
-This project implements an **active object localization framework** using **Deep Q-Learning**, inspired by Caicedo & Lazebnik (ICCV 2015).  
+This project implements an active object localization framework using Deep Q-Learning, inspired by Caicedo & Lazebnik (ICCV 2015).  
 The agent learns to iteratively refine a bounding box over bird images from the original "Pascal VOC 2007" and "CUB-200-2011" dataset.
 ---
 
