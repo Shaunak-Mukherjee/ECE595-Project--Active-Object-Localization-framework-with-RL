@@ -45,9 +45,10 @@ Purdue University – ECE 595
 ## How to Run
 
 1. Open the provided Jupyter notebooks in Google Colab and simply 'Run all cells'
-2. Mount the CUB dataset and run setup cells  
-3. Train the DQN agent  
-4. Evaluate using built-in visualization and metric functions  
+2. Respective notebooks corresponding to particular dataset are clearly marked with filenames
+3. Mount the CUB dataset and run setup cells  
+4. Train the DQN agent  
+5. Evaluate using built-in visualization and metric functions  
 
 
 
