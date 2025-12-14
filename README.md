@@ -1,55 +1,47 @@
- ECE595-Project — Active Object Localization Framework with Deep Reinforcement Learning - Reimplementation and Extension
+# ECE595-Project — Active Object Localization Framework with Deep Reinforcement Learning  
+**Reimplementation and Extension**
 
-# Active Object Localization with Deep Reinforcement Learning  
-### ECE 595 Final Project – Purdue University
+## Active Object Localization with Deep Reinforcement Learning  
+**ECE 595 Final Project – Purdue University**
 
-### This project implements an active object localization framework using Deep Q-Learning, inspired by Caicedo & Lazebnik (ICCV 2015).  
-### The agent learns to iteratively refine a bounding box over bird images from the original "Pascal VOC 2007" and "CUB-200-2011" dataset.
+This project implements an **active object localization framework** using **Deep Q-Learning**, inspired by *Caicedo & Lazebnik, “Active Object Localization with Deep Reinforcement Learning” (ICCV 2015)*.
+
+The initial phase of the project uses **Pascal VOC 2007** primarily as a **verification dataset** to ensure that the reinforcement learning agent, action space, and bounding-box refinement logic function correctly in a standard object detection setting. Once correctness and stability were validated, the framework was **extended to the CUB-200-2011 bird dataset**, a simpler and more controlled domain, to clearly demonstrate the agent’s ability to localize a single dominant object through sequential decision-making.
+
 ---
 
 ## Contributors
+- Shaunak Mukherjee  
+- Grayson Wills  
+- Christian Okreghe  
+- Aravind Muraleedharan  
 
-Shaunak Mukherjee  
-Grayson Wills  
-Christian Okreghe  
-Aravind Muraleedharan  
-Purdue University – ECE 595
+**Purdue University — ECE 595 (Artificial Intelligence)**
 
 ---
 
 ## Overview
-
-- Custom Gym-style environment for dynamic bounding-box manipulation  
-- ResNet-50 feature extractor + DQN agent
-- Sequential decision-making to localize subjects of interest in images from initial bounding box  
-- Evaluation on dataset with IoU metrics and trigger-based accuracy  
-- Visualization tools: episode rollouts, heatmaps, bounding-box overlays
+- Custom **Gym-style reinforcement learning environment** for dynamic bounding-box manipulation  
+- **ResNet-50 feature extractor** paired with a **Deep Q-Network (DQN)** agent  
+- Sequential decision-making process for object localization starting from an initial bounding box  
+- Evaluation using **Intersection over Union (IoU)** metrics and trigger-based accuracy  
+- Visualization utilities for tracking agent behavior and decision trajectories  
 
 ---
 
 ## Key Features
-
-- Discrete action space (move, scale, aspect-ratio, trigger)  
-- Reward shaping based on IoU improvement  
-- Episode-level and dataset-level attention heatmaps  
-- GIF/MP4 generation for localization trajectories  
-- Modular utilities for dataset loading, evaluation, and visualization  
-
----
-### Qualitative Output
-<img src="Figure3.svg" width="700px">
-
+- Discrete **action space** including movement, scaling, aspect-ratio adjustment, and trigger actions  
+- **Reward shaping** based on incremental IoU improvement  
+- Support for **episode-level and dataset-level analysis**  
+- Modular utilities for dataset loading, training, evaluation, and visualization  
+- Reproducible experiments via clearly structured notebooks  
 
 ---
 
 ## How to Run
-
-1. Open the provided Jupyter notebooks in Google Colab and simply 'Run all cells'
-2. Respective notebooks corresponding to particular dataset are clearly marked with filenames
-3. Mount the CUB dataset and run setup cells  
-4. Train the DQN agent  
-5. Evaluate using built-in visualization and metric functions  
-
-
-
-
+1. Open the provided **Jupyter notebooks** in **Google Colab**  
+2. Run all cells in order (datasets and experiments are clearly separated by notebook)  
+3. Mount the required dataset (Pascal VOC or CUB-200-2011) when prompted  
+4. Execute setup cells to initialize the environment and models  
+5. Train the DQN agent  
+6. Evaluate performance using built-in metric and visualization functions  
