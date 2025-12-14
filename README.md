@@ -5,6 +5,15 @@
 
 This project implements an **active object localization framework** using **Deep Q-Learning**, inspired by Caicedo & Lazebnik (ICCV 2015).  
 The agent learns to iteratively refine a bounding box over bird images from the original "Pascal VOC 2007" and "CUB-200-2011" dataset.
+---
+
+## Contributors
+
+Shaunak Mukherjee  
+Grayson Wills  
+Christian Okreghe  
+Aravind Muraleedharan  
+Purdue University – ECE 595
 
 ---
 
@@ -42,12 +51,4 @@ The agent learns to iteratively refine a bounding box over bird images from the 
 
 
 
----
 
-## Contributors
-
-Shaunak Mukherjee  
-Grayson Wills  
-Christian Okreghe  
-Aravind Muraleedharan  
-Purdue University – ECE 595
