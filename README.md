@@ -35,7 +35,7 @@ The agent learns to iteratively refine a bounding box over bird images from the 
 
 ## How to Run
 
-1. Open the provided Jupyter notebook in Google Colab  
+1. Open the provided Jupyter notebooks in Google Colab and simply 'Run all cells'
 2. Mount the CUB dataset and run setup cells  
 3. Train the DQN agent  
 4. Evaluate using built-in visualization and metric functions  
