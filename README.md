@@ -40,8 +40,7 @@ The initial phase of the project uses **Pascal VOC 2007** primarily as a **verif
 
 ## How to Run
 1. Open the provided **Jupyter notebooks** in **Google Colab**
-2. 'Reinforcement_Learning_Final_Project_Showcase.ipynb' is reimplementation using Pascal VOC dataet and notebook
-   'Final_Run_Reinforcement_Learning_Final_Project_Showcase_CUB_200_2011.ipynb' - extension to CUB-200-2011 dataset 
+2. The notebook Reinforcement_Learning_Final_Project_Showcase.ipynb contains the full Pascal VOC 2007 reimplementation, while Final_Run_Reinforcement_Learning_Final_Project_Showcase_CUB_200_2011.ipynb contains the extension and experiments on the CUB-200-2011 bird dataset.
 4. Run all cells in order (datasets and experiments are clearly separated by notebook)  
 5. Mount the required dataset (Pascal VOC or CUB-200-2011) when prompted  
 6. Execute setup cells to initialize the environment and models  
