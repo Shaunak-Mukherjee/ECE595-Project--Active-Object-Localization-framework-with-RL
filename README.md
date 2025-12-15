@@ -16,7 +16,7 @@ The initial phase of the project uses **Pascal VOC 2007** primarily as a **verif
 - Christian Okreghe  
 - Aravind Muraleedharan  
 
-**Purdue University — ECE 595 (Artificial Intelligence)**
+**Purdue University — ECE 595**
 
 ---
 
