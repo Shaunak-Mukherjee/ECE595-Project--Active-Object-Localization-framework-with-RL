@@ -39,9 +39,11 @@ The initial phase of the project uses **Pascal VOC 2007** primarily as a **verif
 ---
 
 ## How to Run
-1. Open the provided **Jupyter notebooks** in **Google Colab**  
-2. Run all cells in order (datasets and experiments are clearly separated by notebook)  
-3. Mount the required dataset (Pascal VOC or CUB-200-2011) when prompted  
-4. Execute setup cells to initialize the environment and models  
-5. Train the DQN agent  
-6. Evaluate performance using built-in metric and visualization functions  
+1. Open the provided **Jupyter notebooks** in **Google Colab**
+2. 'Reinforcement_Learning_Final_Project_Showcase.ipynb' is reimplementation using Pascal VOC dataet and notebook
+   'Final_Run_Reinforcement_Learning_Final_Project_Showcase_CUB_200_2011.ipynb' - extension to CUB-200-2011 dataset 
+4. Run all cells in order (datasets and experiments are clearly separated by notebook)  
+5. Mount the required dataset (Pascal VOC or CUB-200-2011) when prompted  
+6. Execute setup cells to initialize the environment and models  
+7. Train the DQN agent  
+8. Evaluate performance using built-in metric and visualization functions  
